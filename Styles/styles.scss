@@ -7,7 +7,9 @@
 }
 
 :root {
-
+  --color-personal-1: #7f5a83;
+  --color-personal-2: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  
   --color-primary: #191d2b;
   --color-secondary: #f59323;
   --color-white: #ffff;
@@ -63,26 +65,53 @@ section{
 .sec1{
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #d4418e;
+background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
 }
 
 .sec2{
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #485461;
+background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
 }
 
 .sec3{
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #0cbaba;
+background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+
 }
 
 .sec4{
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #7f5a83;
+background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+
 }
 
 .sec5{
   display: none;
   transform: translateY(0) scale(1);
+  background-color: #36096d;
+background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+}
+
+.active{
+  display: block;
+  animation: scaleAnim 1s ease-in-out;
+  @keyframes scaleAnim {
+    0%{
+      transform: translateY(-100%) scaleY(0)
+    }
+
+    100%{
+      transform: translateY(0) scaleY(1)
+    }
+    
+  }
 }
 
 //controls
