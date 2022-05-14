@@ -162,7 +162,25 @@ header{
     }
   }
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 400px){
+  .controls{
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    .control{
+      margin: .6rem .5rem !important;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 600px){
   .section{
     padding: 7rem 3rem;
   }
