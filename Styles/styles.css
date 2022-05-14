@@ -1101,29 +1101,7 @@ section {
     background-color: var(--color-grey-5);
   }
   .controls .control {
-    margin: .6rem 2rem !important;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .controls {
-    top: auto;
-    bottom: 0;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5);
-  }
-  .controls .control {
-    margin: .6rem .5rem !important;
+    margin: .6rem 1rem !important;
   }
 }
 
