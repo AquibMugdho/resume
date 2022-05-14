@@ -17,10 +17,11 @@ function PageTransitions() {
   allSections.addEventListener('click', (e) => {
     const id = e.target.dataset.id;
     if (id) {
-      //remove selected from the other buttons
-      sectBtns.forEach((btn) => {
+      //remove selected from the other btns
+      const btns = sectBtns[0].children;
+      for (let btn of btns) {
         btn.classList.remove('active')
-      })
+      }
       e.target.classList.add('active')
 
       //hide other sectiobns
