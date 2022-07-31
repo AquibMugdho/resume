@@ -42,4 +42,38 @@ function PageTransitions() {
   })
 }
 
+const textString = `Wake up, Neo...
+
+The Matrix has you...
+Follow the white rabbit...
+
+
+Knock, knock, Neo!`;
+
+const textDiv = document.getElementById("text");
+
+let idx = 0;
+let it;
+
+setText = _ => {
+  if (idx === textString.length) {
+    clearInterval(it);
+    setTimeout(_ => {
+      idx = 0;
+      textDiv.textContent = "";
+      it = setInterval(setText, 90);
+    }, 1000);
+  } else {
+    textDiv.textContent += textString[idx];
+    idx++;
+  }
+};
+
+it = setInterval(setText, 90);
+
 PageTransitions();
+
+
+
+  
+    
